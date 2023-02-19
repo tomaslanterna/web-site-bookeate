@@ -1,9 +1,9 @@
-const { default: Layout } = require("@/layouts/Layout")
+import React from 'react'
 
-const Home=()=>{
-    return (<Layout>
-        <div>Super</div>
-    </Layout>)
+const Home2 = () => {
+  return (
+    <div>Home</div>
+  )
 }
 
-export default Home;
+export default Home2;

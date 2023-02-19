@@ -1,7 +1,13 @@
-import Layout from '@/layouts/Layout'
-import '@/styles/globals.css'
+import { BusinessProvider } from "@/contexts/BusinessContext";
+import Layout from "@/layouts";
+import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />)
+    <BusinessProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </BusinessProvider>
+  );
 }
